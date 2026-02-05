@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS383 Lab 02</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <button class="btn btn-outline-light me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu">
+                &#9776;
+            </button>
+            <a class="navbar-brand" href="#">CS383 Enterprise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Design</a></li>
+                            <li><a class="dropdown-item" href="#">System Architecture</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="sideMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Navigation Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column gap-3">
+                <li class="nav-item"><a class="nav-link text-white bg-primary rounded" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">User Profile</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold">Modern Enterprise Solutions</h1>
+                    <p class="lead">Harnessing the power of Bootstrap 5 for scalable web applications.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold">Innovative Design</h1>
+                    <p class="lead">Creating seamless user experiences across all devices.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&h=500" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold">Data Analytics</h1>
+                    <p class="lead">Visualize your business growth with our advanced dashboards.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Join Our Community</h2>
+            <p class="text-muted">Start your enterprise journey today with our free tier.</p>
+            <button class="btn btn-primary btn-lg px-5 shadow" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-up for free</button>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&h=400" class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Strategy & Planning</h5>
+                        <p class="card-text text-muted">Develop robust business strategies to stay ahead of the competition.</p>
+                        <a href="#" class="btn btn-outline-primary w-100">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&h=400" class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Development</h5>
+                        <p class="card-text text-muted">Our expert developers turn your vision into high-performance code.</p>
+                        <a href="#" class="btn btn-outline-primary w-100">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&h=400" class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Global Support</h5>
+                        <p class="card-text text-muted">We offer round-the-clock technical assistance for all our partners.</p>
+                        <a href="#" class="btn btn-outline-primary w-100">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row align-items-center mb-5 py-4">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&h=600" class="img-fluid rounded-4 shadow-lg" alt="Team Work">
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <h2 class="display-6 fw-bold mb-3">Excellence in Collaboration</h2>
+                <p class="lead text-secondary">Our mission is to empower developers with tools that make web design intuitive and efficient.</p>
+                <p>We leverage Bootstrap's responsive grid and utility classes to build interfaces that feel natural on any screen size, from mobile to ultra-wide desktops.</p>
+                <button class="btn btn-dark px-4 py-2">Our Workflow</button>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h3 class="text-center mb-4 fw-bold">Frequently Asked Questions</h3>
+                <div class="accordion shadow-sm" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                Why choose our Enterprise Framework?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Our framework is built on top of Bootstrap 5, ensuring long-term support, extensive documentation, and a massive community.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                How secure is the platform?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                We implement industry-standard encryption and security protocols to keep your data safe.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="fw-bold mb-4">Project Portfolio</h2>
+        <div class="row g-3 mb-5">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 1">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 2">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 3">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 4">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 5">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 6">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 7">
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=400&h=300" class="img-fluid rounded gallery-img shadow-sm" alt="Gallery 8">
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold mb-3">Enterprise CS383</h5>
+                    <p class="small text-muted">Leading the way in professional web development education and corporate training modules.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none small">Home</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none small">Services</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none small">Case Studies</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none small">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h5 class="fw-bold mb-3">Submit a Query</h5>
+                    <form class="row g-2">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-sm" placeholder="Email Address" required>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-primary btn-sm w-100">Send Inquiry</button>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <textarea class="form-control form-control-sm" rows="3" placeholder="Describe your project..."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="row align-items-center">
+                <div class="col-md-7 small text-muted">
+                    &copy; 2026 Yanbu Industrial College | Department of Computer Science & Engineering
+                </div>
+                <div class="col-md-5 text-md-end">
+                    <a href="#" class="text-white-50 me-3 text-decoration-none small">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none small">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="signupModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Create Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row g-2 mb-3">
+                            <div class="col"><input type="text" class="form-control" placeholder="First Name" required></div>
+                            <div class="col"><input type="text" class="form-control" placeholder="Last Name" required></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Username" required>
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6"><input type="text" class="form-control" placeholder="City"></div>
+                            <div class="col-md-3">
+                                <select class="form-select">
+                                    <option selected>State</option>
+                                    <option>Yanbu</option>
+                                    <option>Jeddah</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3"><input type="text" class="form-control" placeholder="Zip"></div>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input type="checkbox" class="form-check-input" id="termsCheck">
+                            <label class="form-check-label small" for="termsCheck">Agree to terms and conditions</label>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100">Submit form</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

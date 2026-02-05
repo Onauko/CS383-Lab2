@@ -1,0 +1,62 @@
+#heroCarousel .carousel-item {
+    height: 500px;
+    background-color: #333;
+}
+
+#heroCarousel img {
+    object-fit: cover;
+    height: 100%;
+    filter: brightness(0.7);
+}
+
+.carousel-caption {
+    bottom: 20%;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.gallery-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-img:hover {
+    transform: translateY(-5px);
+    filter: saturate(1.2);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.offcanvas {
+    width: 300px;
+}
+
+.nav-link {
+    transition: padding-left 0.3s ease;
+}
+
+.nav-link:hover {
+    padding-left: 20px;
+}
+
+footer {
+    border-top: 5px solid #0d6efd;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
